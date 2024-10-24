@@ -6,8 +6,10 @@ import { Snacks } from "../../../components/Snacks"
 
 import { getDesserts } from "../../../services/api"
 
+import { SnackData } from "../../../interfaces/SnackData"
+
 export default function Desserts() {
-  const [desserts, setDesserts] = useState([])
+  const [desserts, setDesserts] = useState<SnackData[]>([])
 
   useEffect(() => {
     ;(async () => {

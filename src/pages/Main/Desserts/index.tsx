@@ -1,23 +1,13 @@
-import { useState, useEffect } from "react"
+import { useSnack } from "../../../hooks/useSnack"
 
 import { Head } from "../../../components/Head"
 import { SnackTitle } from "../../../components/SnackTitle"
 import { Snacks } from "../../../components/Snacks"
 
-import { getDesserts } from "../../../services/api"
-
-import { SnackData } from "../../../interfaces/SnackData"
 
 export default function Desserts() {
-  const [desserts, setDesserts] = useState<SnackData[]>([])
 
-  useEffect(() => {
-    ;(async () => {
-      const dessertsRequest = await getDesserts()
-
-      setDesserts(dessertsRequest.data)
-    })()
-  }, [])
+  const { desserts } = useSnack()
 
     return (
         <>

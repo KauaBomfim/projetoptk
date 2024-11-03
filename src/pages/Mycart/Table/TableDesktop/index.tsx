@@ -1,7 +1,7 @@
 import { useCart } from '../../../../hooks/useCart'
 import { FaTrashAlt } from 'react-icons/fa'
 
-import { ConfirmOrder } from '../../../../components/ConfirmOrder'
+import { ConfirmOrder } from '../../../../components/OrderCloseAction/ConfirmOrder'
 
 import { currencyFormat } from '../../../../helpers/currencyFormat'
 

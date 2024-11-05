@@ -21,7 +21,7 @@ export function AppRoutes() {
       </Route>
       <Route path='cart' element={<MyCartPage />}/>
       <Route path='payment' element={<Payment />}/>
-      <Route>
+      <Route path='order'>
         <Route path='success/:orderId' element={<OrderSuccessPage />} />
       </Route>
     </Routes>

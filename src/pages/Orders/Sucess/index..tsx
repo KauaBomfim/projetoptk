@@ -26,7 +26,7 @@ export default function OrderSuccessPage() {
         </ul>
 
         <br />
-        <a href='/'>Voltar para a página inicial</a>
+        <button><a href='/'>Voltar para a página inicial</a></button>
       </Inner>
     </Container>
   )

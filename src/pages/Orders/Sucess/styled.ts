@@ -1,3 +1,5 @@
+import { darken } from 'polished'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const Container = styled.div`
